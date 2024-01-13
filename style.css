@@ -1,0 +1,165 @@
+ @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans';
+}
+
+body {
+    background-color: hsl(185, 75%, 39%);
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 32rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+}
+
+.card {
+    width: 30rem;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    margin-top: -1px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 8rem;
+    margin-top: 8px;
+    margin-left: 8px;
+    position: relative;
+}
+
+.content {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 50%;
+    width: 9rem;
+    height: 9rem;
+    margin-top: -4.5rem;
+    margin-left: 10rem;
+    position: absolute;
+}
+
+.name {
+    margin-top: 2rem;
+    width: 15rem;
+    font-size: 1.50em;
+    margin-left: -1rem;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+span {
+    color: hsl(0, 0%, 59%);
+    font-weight: 700;
+    margin-left: 0.42rem;
+}
+
+.location {
+    margin-top: 0.8rem;
+    width: 15rem;
+    font-size: 1.2em;
+    margin-left: 2.5rem;
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12.45rem;
+    font-weight: 700;
+    font-size: 1.55rem;
+    color: hsl(229, 23%, 23%);
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 32px;
+    border-top: 1px solid hsl(0, 0%, 90%);
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.83rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin-top: 0.45rem;
+    color: hsl(0, 0%, 59%);
+}
+
+.followers {
+    margin-left: 4rem;
+}
+
+.likes {
+    margin-left: -0.6rem;
+}
+
+.photos {
+    margin-right: 5rem;
+}
+
+@media (max-width: 375px) {
+    .card {
+        width: 22.2rem;
+    }
+    
+    .profile-pic {
+        width: 7rem;
+        margin-top: 8px;
+        margin-left: 8px;
+    }
+    
+    .content {
+        width: 8rem;
+        height: 8rem;
+        margin-top: -4.3rem;
+        margin-left: 7.43rem;
+    }
+
+    .name {
+        font-size: 1.42em;
+    }
+    
+    .stats {
+        margin-top: 12rem;
+        font-size: 1.5rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        padding-top: 34px;
+    }
+    
+    .social {
+        font-size: 0.85rem;
+        letter-spacing: 1px;
+        color: hsl(0, 0%, 59%);
+    }
+    
+    .followers {
+        margin-left: 1.8rem;
+    }
+    
+    .likes {
+        margin-left: 0.6rem;
+    }
+    
+    .photos {
+        margin-right: 2.5rem;
+    }
+
+    .like-stat {
+        margin-left: 26px;
+    }
+
+    .container {
+        height: 28.5rem;
+    }
+}
